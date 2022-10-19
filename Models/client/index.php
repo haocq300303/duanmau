@@ -67,4 +67,21 @@ function get_product_by_category($id){
     return $listpro;
 }
 
+function checkEmail($email) {
+    $sql = "SELECT * FROM users WHERE email='$email'";
+    $result = getData($sql, "FETCH_ONE");
+    return $result;
+}
+
+function get_one_user($id) {
+    $sql = "SELECT * FROM users WHERE id='$id'";
+    $result = getData($sql, 'FETCH_ONE');
+    return $result;
+}
+
+function update_account($id, $username, $email, $password){
+    $sql = "UPDATE users SET username='$username', email='$email', password='$password'  WHERE id='$id'";
+    getData($sql, '');
+}
+
 ?>

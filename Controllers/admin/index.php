@@ -14,6 +14,8 @@
             require "comment.php";
             break;
         case "statistical":
+            require "Models/admin/statistical.php";
+            $results = get_all_statistical();
             require "statistical.php";
             break;
         default:

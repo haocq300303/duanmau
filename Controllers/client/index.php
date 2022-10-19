@@ -40,6 +40,12 @@ require "Models/client/index.php";
         case "register":
             $VIEW_NAME = "register.php";
             break;
+        case "quenmk":
+            $VIEW_NAME = "quenmk.php";
+            break;
+        case "capnhattk":
+            $VIEW_NAME = "capnhattk.php";
+            break;
         default:
             echo '<h1>404 not found</h1>';
             break;

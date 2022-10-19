@@ -9,14 +9,9 @@ function checkuser($username, $password){
     $user = getData($sql, 'FETCH_ONE');
     return $user;
 }
-function checkemail($email){
-    $sql = "SELECT * FROM users WHERE email='".$email."'";
-    $user = getData($sql, 'FETCH_ONE');
-    return $user;
-}
-function update_account($id,$user, $pass, $email, $address, $tel){
-    $sql = "UPDATE `account` SET `user` = '$user', `pass` = '$pass', `email` = '$email', `address` = '$address', `tel` = '$tel' WHERE `account`.`id` = $id";
-    pdo_execute($sql);
+function update_account($id, $username, $email, $password){
+    $sql = "UPDATE users SET username='$username', email='$email', password='$password'  WHERE id='$id'";
+    getData($sql, '');
 }
 function get_all_users(){
     $sql = "SELECT * FROM users";

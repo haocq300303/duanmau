@@ -77,9 +77,9 @@
                     ?>
                     <p class="text-center">Xin chào <?=$username?>!!!</p>
                     <form method="post" action="" class="mb">
-                        <a href="index.php?act=quenmk">Quên mật khẩu </a>
+                        <a href="?page=quenmk">Quên mật khẩu </a>
                         <br>
-                        <a href="index.php?act=edit_taikhoan">Cập nhật tài khoản</a>
+                        <a href="?page=capnhattk">Cập nhật tài khoản</a>
                         <br>
                         <?php
                         if($role == "ADMIN" ) { ?>
@@ -116,7 +116,7 @@
                         <div class="w-100">
                             <a href="?page=register" class="btn btn-dark w-100" name="btn-signUp">Đăng ký</a>
                         </div>
-                        <a href="#" class="link-primary text-decoration-none">Quên mật khẩu?</a>
+                        <a href="?page=quenmk" class="link-primary text-decoration-none mt-2">Quên mật khẩu?</a>
                         <span style="color: red;margin-top: 5px;"><?php echo isset($thongbao) ? $thongbao : ""; ?></span>
                     </form>
                     <?php } ?>

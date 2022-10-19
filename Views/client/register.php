@@ -8,7 +8,7 @@
     }
 ?>
 
-<div class="col-9">
+<div>
     <div class="alert alert-danger" role="alert">
         <h2 class="text-center">ĐĂNG KÝ THÀNH VIÊN</h2>
     </div>
