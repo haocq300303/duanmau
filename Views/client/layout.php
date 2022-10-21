@@ -46,6 +46,9 @@
                         <a class="nav-link" href="/Xshop?page=product">Sản phẩm</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="/Xshop?page=cart">Giỏ hàng</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="/Xshop?page=introduce">Giới thiệu</a>
                     </li>
                     <li class="nav-item">
@@ -144,7 +147,7 @@
                                     style="color: black;text-decoration: none;"
                                     class="d-flex"
                                 >
-                                <img class="item-img m-20" src="images/<?php echo $value['image']; ?>" alt="">
+                                <img class="item-img m-20" src="Views/images/<?php echo $value['image']; ?>" alt="">
                                 <p class="item-text"><?php echo $value['name']; ?></p>
                                 </a>
                             </li>

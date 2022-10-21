@@ -21,7 +21,7 @@
             <div class="col-12 col-md-6 col-lg-4">
             <div class="card">
                 <a href="?page=detail&idPro=<?php echo $value['id'];?>">
-                <img style="height: 301.33px;" class="card-img-top" src="images/<?php echo $value['image']; ?>" alt="Card image cap">
+                <img style="height: 301.33px;" class="card-img-top" src="Views/images/<?php echo $value['image']; ?>" alt="Card image cap">
                 </a>
                 <div class="card-body">
                     <h4 class="card-title" style="height: 84px;">
@@ -35,7 +35,7 @@
                             <p class="btn btn-danger btn-block"><?php echo $value['price']; ?> $</p>
                         </div>
                         <div class="col">
-                            <a href="#" class="btn btn-success btn-block">Add to cart</a>
+                            <a href="?page=detail&idPro=<?php echo $value['id'];?>" class="btn btn-success btn-block">Xem ngay</a>
                         </div>
                     </div>
                 </div>

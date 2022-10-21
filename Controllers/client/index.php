@@ -46,6 +46,15 @@ require "Models/client/index.php";
         case "capnhattk":
             $VIEW_NAME = "capnhattk.php";
             break;
+        case "cart":
+            if(isset($_GET['deleteId'])) {
+                session_start();
+                $index = $_GET['deleteId'];
+                unset($_SESSION['mycart'][$index]);
+                header("Location: ?page=cart");
+            }
+            $VIEW_NAME = "cart.php";
+            break;
         default:
             echo '<h1>404 not found</h1>';
             break;

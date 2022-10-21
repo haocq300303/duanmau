@@ -12,7 +12,7 @@
                     <div class="carousel-item <?php echo $key == 0 ? 'active' : '';?>" data-bs-interval="<?php echo $key == 0 ? '10000' : $key == 1 ? '2000' : $key == 2 ? '2000' : ''; ?>">
                         <div class="image" style="height: 500px;width: 500px;margin: 0 auto">
                             <a href="?page=detail&idPro=<?php echo $value['id']; ?>">
-                            <img src="images/<?php echo $value['image'] ?>" class="d-block w-100 h-100" alt="special product">
+                            <img src="Views/images/<?php echo $value['image'] ?>" class="d-block w-100 h-100" alt="special product">
                             </a>
                         </div>
                         <div class="carousel-caption d-none d-md-block">
@@ -38,13 +38,13 @@
             <div class="col-4">
                 <div class="card w-100">
                     <a href="?page=detail&idPro=<?php echo $value['id']; ?>">
-                    <img style="height: 304px;" src="images/<?php echo $value['image'];?>" class="card-img-top" alt="image product">
+                    <img style="height: 304px;" src="Views/images/<?php echo $value['image'];?>" class="card-img-top" alt="image product">
                     </a>
                     <div class="card-body">
                         <h5 class="card-title" style="height: 48px;"><?php echo $value['name']; ?></h5>
                         <p style="color: red;font-weight: bold"><?php echo $value['price']; ?> $</p>
                         <p class="card-text"><?php echo $value['description']; ?></p>
-                        <a href="?page=detail&idPro=<?php echo $value['id']; ?>" class="btn btn-primary">Mua ngay</a>
+                        <a href="?page=detail&idPro=<?php echo $value['id']; ?>" class="btn btn-primary">Xem ngay</a>
                     </div>
                 </div>
             </div>

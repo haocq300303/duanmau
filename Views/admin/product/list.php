@@ -25,7 +25,7 @@
                 <th scope="row"><input type="checkbox"></th>
                 <td><?php echo $value['id'] ?></td>
                 <td style="width: 200px;"><?php echo $value['name'] ?></td>
-                <td><img src="images/<?php echo $value['image'];?>" style="width: 50px;height: 50px;border-radius: 50%;" alt="ảnh sp"></td>
+                <td><img src="Views/images/<?php echo $value['image'];?>" style="width: 50px;height: 50px;border-radius: 50%;" alt="ảnh sp"></td>
                 <td style="width: 200px;" ><?php echo $value['description'] ?></td>
                 <td><?php echo $value['price'] ?></td>
                 <td><?php echo $value['reduced_price'] ?></td>
