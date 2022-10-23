@@ -24,7 +24,7 @@
                 <button type="button" class="btn btn-danger" onclick="
                     const result = confirm('Bạn có chắc chắn muốn xóa không?');
                     if(result){
-                    location.href='?page=category&deleteId=<?php echo $value["id"]; ?>'
+                    location.href='?page=user&deleteId=<?php echo $value["id"]; ?>'
                     }">Xóa</button>
             </td>
         </tr>
